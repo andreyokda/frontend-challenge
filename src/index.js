@@ -14,7 +14,7 @@ const App = () => {
     setLoading(true);
     try {
       const response = await fetch("https://api.thecatapi.com/v1/images/search?limit=10", {
-        headers: { "x-api-key": "live_GSZBZtHpvKTMTMdn7zkYOJpad7e6hNMJUsfIYrdnL2zQO3aSCdw3041uQP0Baswh" },
+        headers: { "x-api-key": "d5eae155-b4fc-42c0-bf2d-3937a8dfc44e" },
       });
       const data = await response.json();
       setCats((prev) => [...prev, ...data]);
