@@ -13,7 +13,7 @@ const App = () => {
   const fetchCats = async () => {
     setLoading(true);
     try {
-      const response = await fetch("https://api.thecatapi.com/v1/images/search?limit=10", {
+      const response = await fetch("https://api.thecatapi.com/v1/images/search?limit=12", {
         headers: { "x-api-key": "d5eae155-b4fc-42c0-bf2d-3937a8dfc44e" },
       });
       const data = await response.json();
